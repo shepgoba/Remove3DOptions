@@ -3,13 +3,16 @@ INSTALL_TARGET_PROCESSES = SpringBoard
 FINAL_PACKAGE = 1
 DEBUG = 0
 
+export TARGET = iphone:clang:11.2:11.2
 export ARCHS = arm64 arm64e
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = No3DDelete
+TWEAK_NAME = Remove3DOptions
 
-No3DDelete_FILES = Tweak.x
-No3DDelete_CFLAGS = -fobjc-arc
+Remove3DOptions_FILES = Tweak.x
+Remove3DOptions_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+SUBPROJECTS += remove3doptionsprefs
+include $(THEOS_MAKE_PATH)/aggregate.mk
