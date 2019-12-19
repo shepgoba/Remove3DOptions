@@ -1,0 +1,9 @@
+Package: com.shepgoba.no3ddelete
+Name: No3DDelete
+Depends: mobilesubstrate, firmware (>= 13.2)
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Hide the delete option for apps on iOS 13.2
+Maintainer: shepgoba
+Author: shepgoba
+Section: Tweaks
